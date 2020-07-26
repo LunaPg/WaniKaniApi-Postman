@@ -1,0 +1,849 @@
+{
+	"info": {
+		"_postman_id": "c8544a9e-1e07-44c7-943d-8eaf486d0884",
+		"name": "WaniKani v2 Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/v2/%3Capi_endpoint_here%3E",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/%3Capi_endpoint_here%3E",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"%3Capi_endpoint_here%3E"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/<api_endpoint_here>', -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/%3Capi_endpoint_here%3E",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/%3Capi_endpoint_here%3E",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"%3Capi_endpoint_here%3E"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/<api_endpoint_here>'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/assignments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/assignments",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"assignments"
+					]
+				},
+				"description": "'https://api.wanikani.com/v2/assignments'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/assignments/80463006",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/assignments/80463006",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"assignments",
+						"80463006"
+					]
+				},
+				"description": "'https://api.wanikani.com/v2/assignments/80463006'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/assignments/80463006/start",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"started_at\": \"2017-09-05T23:41:28.980679Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{wanikani}}/v2/assignments/80463006/start",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"assignments",
+						"80463006",
+						"start"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/assignments/80463006/start'   -X 'PUT'   -H 'Wanikani-Revision: 20170710'   -H 'Content-Type: application/json; charset=utf-8'   -H 'Authorization: Bearer <api_token_here>'   -d $'{       'started_at': '2017-09-05T23:41:28.980679Z'     }'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/level_progressions",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/level_progressions",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"level_progressions"
+					]
+				},
+				"description": "'https://api.wanikani.com/v2/level_progressions'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/level_progressions/49392",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/level_progressions/49392",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"level_progressions",
+						"49392"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/level_progressions/49392'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/resets",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/resets",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"resets"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/resets'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/resets/234",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/resets/234",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"resets",
+						"234"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/resets/234'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/reviews",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/reviews",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"reviews"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/reviews'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/reviews/534342",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/reviews/534342",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"reviews",
+						"534342"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/reviews/534342'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/reviews",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"review\": {\r\n    \"assignment_id\": 1422,\r\n    \"incorrect_meaning_answers\": 1,\r\n    \"incorrect_reading_answers\": 2,\r\n    \"created_at\": \"2017-09-30T01:42:13.453291Z\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{wanikani}}/v2/reviews",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"reviews"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/reviews'   -X 'POST'   -H 'Wanikani-Revision: 20170710'   -H 'Content-Type: application/json; charset=utf-8'   -H 'Authorization: Bearer <api_token_here>'   -d $'{       'review': {         'assignment_id': 1422, \n         'incorrect_meaning_answers': 1, \n         'incorrect_reading_answers': 2, \n         'created_at': '2017-09-30T01:42:13.453291Z'       }     }'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/review_statistics",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/review_statistics",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"review_statistics"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/review_statistics'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/review_statistics/80461982",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/review_statistics/80461982",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"review_statistics",
+						"80461982"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/review_statistics/80461982'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/spaced_repetition_systems",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/spaced_repetition_systems",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"spaced_repetition_systems"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/spaced_repetition_systems'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/spaced_repetition_systems/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/spaced_repetition_systems/1",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"spaced_repetition_systems",
+						"1"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/spaced_repetition_systems/1'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/srs_stages",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/srs_stages",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"srs_stages"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/srs_stages'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/study_materials",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/study_materials",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"study_materials"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/study_materials'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/study_materials/65231",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/study_materials/65231",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"study_materials",
+						"65231"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/study_materials/65231'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/study_materials",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"study_material\": {\r\n        \"subject_id\": 2,\r\n        \"meaning_note\": \"The two grounds is too much\",\r\n        \"reading_note\": \"This is tsu much\",\r\n        \"meaning_synonyms\": [\r\n            \"double\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{wanikani}}/v2/study_materials",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"study_materials"
+					]
+				},
+				"description": "'https://api.wanikani.com/v2/study_materials'   -X 'POST'   -H 'Wanikani-Revision: 20170710'   -H 'Content-Type: application/json; charset=utf-8'   -H 'Authorization: Bearer <api_token_here>'   -d $'{       'study_material': {         'subject_id': 2, \n         'meaning_note': 'The two grounds is too much', \n         'reading_note': 'This is tsu much', \n         'meaning_synonyms': [           'double'         ]       }     }'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/study_materials/234",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"study_material\": {\r\n        \"meaning_note\": \"The two grounds are on top of each other\",\r\n        \"reading_note\": \"This is too tsu much\",\r\n        \"meaning_synonyms\": [\r\n            \"double\",\r\n            \"twice\"\r\n        ]\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{wanikani}}/v2/study_materials/234",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"study_materials",
+						"234"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/study_materials/234'   -X 'PUT'   -H 'Wanikani-Revision: 20170710'   -H 'Content-Type: application/json; charset=utf-8'   -H 'Authorization: Bearer <api_token_here>'   -d $'{       'study_material': {         'meaning_note': 'The two grounds are on top of each other', \n         'reading_note': 'This is too tsu much', \n         'meaning_synonyms': [           'double', \n           'twice'         ]       }     }'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/subjects",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/subjects",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"subjects"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/subjects'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/summary",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/summary",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"summary"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/summary'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/user",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/user'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"preferences\": {\r\n      \"lessons_autoplay_audio\": true,\r\n      \"lessons_batch_size\": 3,\r\n      \"lessons_presentation_order\": \"shuffled\",\r\n      \"reviews_autoplay_audio\": true,\r\n      \"reviews_display_srs_indicator\": false\r\n    }\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{wanikani}}/v2/user",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/user'   -X 'PUT'   -H 'Wanikani-Revision: 20170710'   -H 'Content-Type: application/json; charset=utf-8'   -H 'Authorization: Bearer <api_token_here>'   -d $'{       'user': {         'preferences': {           'lessons_autoplay_audio': true, \n           'lessons_batch_size': 3, \n           'lessons_presentation_order': 'shuffled', \n           'reviews_autoplay_audio': true, \n           'reviews_display_srs_indicator': false         }       }     }'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/voice_actors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/voice_actors",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"voice_actors"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/voice_actors'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		},
+		{
+			"name": "/v2/voice_actors/1",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{wanikani}}/v2/voice_actors/1",
+					"host": [
+						"{{wanikani}}"
+					],
+					"path": [
+						"v2",
+						"voice_actors",
+						"1"
+					]
+				},
+				"description": " 'https://api.wanikani.com/v2/voice_actors/1'   -H 'Wanikani-Revision: 20170710'   -H 'Authorization: Bearer <api_token_here>'"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
