@@ -738,6 +738,15 @@
         },
         "method": "PUT",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"user\": \r\n { \"preferences\": { \r\n \"lessons_autoplay_audio\" : true, \r\n \"lessons_batch_size\": 3,\r\n \"lessons_presentation_order\": \"shuffled\", \r\n  \"reviews_autoplay_audio\": true,\r\n \"reviews_display_srs_indicator\": false \r\n }\r\n } \r\n }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": {
           "raw": "{{wanikani}}/v2/user",
           "host": [
